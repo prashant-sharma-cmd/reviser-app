@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ae9d64e-757f-4540-af4a-eb80d34af620" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/reviser-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashyboard/templates/dashyboard/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashyboard/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/templates/base_bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/templates/base_menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/templates/home/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/home/templates/registration/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashyboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashyboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashyboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashyboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +64,13 @@
     "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Python\reviser-app\app\home\templates\registration" />
+      <recent name="D:\Projects\Python\reviser-app\app\home" />
+      <recent name="D:\Projects\Python\reviser-app" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('dashyboard.urls')),
+    path('accounts/', include('home.urls')),
 ]
 
 # Serve the static HTML

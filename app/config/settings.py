@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y9v8ik6v=ow!5^ojqke1^**o+yxi4!69%y)3pm%zew5v443suv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     #MyApps
     'dashyboard.apps.DashyboardConfig',
+    'home.apps.HomeConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_REDIRECT_URL = '/'
