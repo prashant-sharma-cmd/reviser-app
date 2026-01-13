@@ -15,8 +15,31 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path, include
+from django.views.static import serve
+import os
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('dashyboard.urls')),
+]
+
+# Serve the static HTML
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+urlpatterns += [
+    re_path(r'^site/(?P<path>.*)$', serve,
+        {'document_root': os.path.join(BASE_DIR, 'site'),
+         'show_indexes': True},
+        name='site_path'
+        ),
+]
+
+# Serve the favicon - Keep for later
+urlpatterns += [
+    path('favicon.ico', serve, {
+            'path': 'favicon.ico',
+            'document_root': os.path.join(BASE_DIR, 'home/static'),
+        }
+    ),
 ]
