@@ -1,0 +1,11 @@
+{% extends "base_menu.html" %}
+{% block content %}
+<div>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Yes, Delete">
+        <input type="submit" value="Cancel" onclick="window.location.href='{% url 'dashyboard:all' %}'">
+    </form>
+</div>
+{% endblock %}

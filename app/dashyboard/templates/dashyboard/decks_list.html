@@ -1,0 +1,25 @@
+{% extends 'base_menu.html' %}
+{% block content %}
+<h1>Deck List</h1>
+<div id="deck_list">
+{% if decks_list %}
+    <ul>
+        {% for deck in decks_list %}
+        <li>
+            <strong> {{ deck.name }} </strong>
+            <a href="#"> Add Cards </a>
+            <a href="{% url 'dashyboard:update' deck.id %}"> Edit Deck </a>
+            <a href="{% url 'dashyboard:delete' deck.id %}"> Delete Deck </a>
+        </li>
+        <span> {{ deck.description }} </span>
+        {% endfor %}
+    </ul>
+{% else %}
+    <div>No Decks Yet!!</div>
+{% endif %}
+</div>
+<div id="deck_form">
+    <a href="{% url 'dashyboard:create' %}">Add Deck</a>
+    <a href="#">Import Deck</a>
+</div>
+{% endblock %}
