@@ -19,11 +19,12 @@ from django.urls import path, re_path, include
 from django.views.static import serve
 import os
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('home.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('dashyboard.urls')),
-    path('accounts/', include('home.urls')),
 ]
 
 # Serve the static HTML
