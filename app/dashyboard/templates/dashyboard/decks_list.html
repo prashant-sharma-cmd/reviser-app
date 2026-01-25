@@ -1,5 +1,6 @@
 {% extends 'base_menu.html' %}
 {% block content %}
+{% load static %}
 <h1>Deck List</h1>
 <div id="deck_list">
 {% if decks_list %}
@@ -7,13 +8,23 @@
         {% for deck in decks_list %}
         <li>
             <strong> {{ deck.name }} </strong>
-            <a href="#"> Add Cards </a>
+            <button id="addCard"> Add Cards </button>
             <a href="{% url 'dashyboard:update' deck.id %}"> Edit Deck </a>
             <a href="{% url 'dashyboard:delete' deck.id %}"> Delete Deck </a>
         </li>
         <span> {{ deck.description }} </span>
         {% endfor %}
     </ul>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="popupForm" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
 {% else %}
     <div>No Decks Yet!!</div>
 {% endif %}

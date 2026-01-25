@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from django.views.generic import TemplateView, ListView, View, CreateView, \
     UpdateView, DeleteView
 
-from .forms import CreateForm
+from .forms import CreateForm, CardCreateForm
 from .models import Decks
 from .owners import OwnerListView, OwnerDeleteView, OwnerUpdateView, \
     OwnerCreateView
@@ -12,8 +12,14 @@ from .owners import OwnerListView, OwnerDeleteView, OwnerUpdateView, \
 
 class DeckListView(OwnerListView):
     model = Decks
+    template_name = 'Dashyboard/decks_list.html'
     success_url = reverse_lazy('dashyboard:all')
 
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        ctx['form'] = CardCreateForm()
+
+        return ctx
 
 class DeckCreateView(LoginRequiredMixin, View):
     template_name = 'dashyboard/decks_form.html'

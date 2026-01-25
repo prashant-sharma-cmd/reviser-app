@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #Addition
     'django.contrib.humanize',
     'django_extensions',
+    'taggit',
 
     #MyApps
     'dashyboard.apps.DashyboardConfig',

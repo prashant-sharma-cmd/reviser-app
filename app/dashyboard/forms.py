@@ -1,5 +1,5 @@
 import django.forms as forms
-from .models import Decks
+from .models import Decks, Cards
 
 class CreateForm(forms.ModelForm):
     class Meta:
@@ -13,3 +13,8 @@ class CreateForm(forms.ModelForm):
             instance.save()
 
         return instance
+
+class CardCreateForm(forms.ModelForm):
+    class Meta:
+        model = Cards
+        fields = ["deck", "type", "front", "back", "detailed_info", "tags"]
